@@ -75,8 +75,12 @@ ZSH_THEME="apple"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+if [[ $(uname) == "Darwin" ]]; then
 plugins=(git brew macos node battery)
-
+else
+plugins=(git node)
+# I don't know what else to put here for now
+fi
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
