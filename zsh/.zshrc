@@ -118,3 +118,8 @@ if type brew &>/dev/null; then
     compinit
   fi
 fi
+
+if [ -f ~/.env ]; then
+    source ~/.env
+fi
+
