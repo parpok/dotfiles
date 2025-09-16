@@ -123,3 +123,13 @@ if [ -f ~/.env ]; then
     source ~/.env
 fi
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jenot/.cache/lm-studio/bin"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jenot/.lmstudio/bin"
+
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+alias updateMeDaddy='~/.scripts/updateMeDaddy.sh'
